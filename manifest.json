@@ -3,7 +3,7 @@
 
   "name": "Offline Cleaner",
   "description": "This extension will AppCache cached webpage assets.",
-  "version": "1.0",
+  "version": "1.1",
 
   "browser_action": {
     "default_title": "Cleanup AppCache",
