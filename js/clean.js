@@ -4,7 +4,7 @@
 # Email: ashier@gmail.com
 # Date:   2016-07-21 16:54:44
 # Last Modified by:   ashier
-# Last Modified time: 2016-07-21 19:40:56
+# Last Modified time: 2016-07-21 21:46:15
 # ---------------------------------------------
 # ---------------------------------------------*/
 'use strict';
@@ -14,11 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#appcache').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'appcache': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeAppcache({}, function() {
           $('#appcache .check').removeClass('hidden');
         });
     }
@@ -27,11 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#localstorage').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'localStorage': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeLocalStorage({}, function() {
           $('#localstorage .check').removeClass('hidden');
         });
     }
@@ -40,11 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#indexeddb').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'appcache': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeIndexedDB({}, function() {
           $('#indexeddb .check').removeClass('hidden');
         });
     }
@@ -53,11 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#websql').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'webSQL': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeWebSQL({}, function() {
           $('#websql .check').removeClass('hidden');
         });
     }
