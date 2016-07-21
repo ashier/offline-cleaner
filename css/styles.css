@@ -1,0 +1,104 @@
+/*
+* @Author: ashier
+* @Date:   2016-07-21 18:09:52
+* @Last Modified by:   ashier
+* @Last Modified time: 2016-07-21 19:43:15
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+}
+
+a, a:active, a:visited {
+    outline: 0;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1485CC;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.head {
+    padding: 0;
+    border-bottom: 1px dashed #afafaf;
+}
+
+.head span {
+    font-size: 14px;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+}
+
+.view {
+    padding-top: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul a {
+    display: block;
+}
+
+li {
+    font-size: 16px;
+    background: #efefef;
+    border-bottom: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+    margin-top: 5px;
+}
+
+li a {
+    padding: 10px;
+}
+
+li img {
+    padding-right: 5px;
+}
+
+li p {
+    font-size: 12px;
+}
+
+.footer {
+    margin: 0;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 10px;
+    color: #afafaf;
+}
+
+.footer p.span {
+    color:red;
+}
