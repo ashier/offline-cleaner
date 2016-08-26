@@ -3,8 +3,13 @@
 # Author: Ashier de Leon
 # Email: ashier@gmail.com
 # Date:   2016-07-21 16:54:44
+<<<<<<< HEAD
 # Last Modified by:   Ashier de Leon
 # Last Modified time: 2016-08-26 14:40:39
+=======
+# Last Modified by:   ashier
+# Last Modified time: 2016-07-21 21:46:15
+>>>>>>> 7055a222c76dce2f2b26d178fbbb9c2fc9ff5c80
 # ---------------------------------------------
 # ---------------------------------------------*/
 'use strict';
@@ -27,11 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#appcache').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'appcache': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeAppcache({}, function() {
           $('#appcache .check').removeClass('hidden');
         });
     }
@@ -40,11 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#localstorage').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'localStorage': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeLocalStorage({}, function() {
           $('#localstorage .check').removeClass('hidden');
         });
     }
@@ -53,11 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#indexeddb').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'appcache': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeIndexedDB({}, function() {
           $('#indexeddb .check').removeClass('hidden');
         });
     }
@@ -66,11 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#websql').click(function() {
     if (chrome['browsingData']) {
 
-        var remove_data = {
-            'webSQL': true
-        };
-
-        chrome.browsingData.remove({}, remove_data, function() {
+        chrome.browsingData.removeWebSQL({}, function() {
           $('#websql .check').removeClass('hidden');
         });
     }

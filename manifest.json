@@ -3,7 +3,7 @@
 
   "name": "Offline Cleaner",
   "short_name": "OfflineCleaner",
-  "description": "This extension will clean AppCache, LocalStorage, IndexedDB and WebSQL.",
+  "description": "This extension will clean AppCache, LocalStorage, IndexedDB, ServiceWorker and WebSQL.",
   "version": "1.3",
 
   "browser_action": {
